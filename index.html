@@ -87,48 +87,102 @@
       background: #ff9800;
       color: #fff;
     }
+    #result {
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>Food Price Finder</h1>
-    <form>
+    <form id="food-form">
       <label for="food-input">Enter the food item</label>
       <input type="text" id="food-input" placeholder="Search food..." list="food">
       <datalist id="food">
-        <option value="Biryani - ₹180"></option>
-        <option value="Butter Chicken - ₹220"></option>
-        <option value="Paneer Tikka - ₹160"></option>
-        <option value="Palak Paneer - ₹150"></option>
-        <option value="Dosa - ₹80"></option>
-        <option value="Idli - ₹50"></option>
-        <option value="Chole Bhature - ₹100"></option>
-        <option value="Rajma Chawal - ₹110"></option>
-        <option value="Sambar - ₹60"></option>
-        <option value="Vada - ₹40"></option>
-        <option value="Uttapam - ₹90"></option>
-        <option value="Puri - ₹70"></option>
-        <option value="Aloo Paratha - ₹60"></option>
-        <option value="Pav Bhaji - ₹90"></option>
-        <option value="Tandoori Chicken - ₹210"></option>
-        <option value="Pizza - ₹200"></option>
-        <option value="Burger - ₹100"></option>
-        <option value="Noodles - ₹90"></option>
-        <option value="Fried Rice - ₹100"></option>
-        <option value="Pasta - ₹130"></option>
-        <option value="Sandwich - ₹80"></option>
-        <option value="Hot Dog - ₹90"></option>
-        <option value="Spring Rolls - ₹100"></option>
-        <option value="Tacos - ₹120"></option>
-        <option value="Sushi - ₹250"></option>
-        <option value="Samosa - ₹20"></option>
-        <option value="Jalebi - ₹30"></option>
-        <option value="Gulab Jamun - ₹40"></option>
-        <option value="Ice Cream - ₹60"></option>
-        <option value="Chocolate Cake - ₹120"></option>
+        <option value="Biryani"></option>
+        <option value="Butter Chicken"></option>
+        <option value="Paneer Tikka"></option>
+        <option value="Palak Paneer"></option>
+        <option value="Dosa"></option>
+        <option value="Idli"></option>
+        <option value="Chole Bhature"></option>
+        <option value="Rajma Chawal"></option>
+        <option value="Sambar"></option>
+        <option value="Vada"></option>
+        <option value="Uttapam"></option>
+        <option value="Puri"></option>
+        <option value="Aloo Paratha"></option>
+        <option value="Pav Bhaji"></option>
+        <option value="Tandoori Chicken"></option>
+        <option value="Pizza"></option>
+        <option value="Burger"></option>
+        <option value="Noodles"></option>
+        <option value="Fried Rice"></option>
+        <option value="Pasta"></option>
+        <option value="Sandwich"></option>
+        <option value="Hot Dog"></option>
+        <option value="Spring Rolls"></option>
+        <option value="Tacos"></option>
+        <option value="Sushi"></option>
+        <option value="Samosa"></option>
+        <option value="Jalebi"></option>
+        <option value="Gulab Jamun"></option>
+        <option value="Ice Cream"></option>
+        <option value="Chocolate Cake"></option>
       </datalist>
       <button type="submit">Search</button>
     </form>
+    <div id="result"></div>
   </main>
+
+  <script>
+    const foodPrices = {
+      "Biryani": "₹180",
+      "Butter Chicken": "₹220",
+      "Paneer Tikka": "₹160",
+      "Palak Paneer": "₹150",
+      "Dosa": "₹80",
+      "Idli": "₹50",
+      "Chole Bhature": "₹100",
+      "Rajma Chawal": "₹110",
+      "Sambar": "₹60",
+      "Vada": "₹40",
+      "Uttapam": "₹90",
+      "Puri": "₹70",
+      "Aloo Paratha": "₹60",
+      "Pav Bhaji": "₹90",
+      "Tandoori Chicken": "₹210",
+      "Pizza": "₹200",
+      "Burger": "₹100",
+      "Noodles": "₹90",
+      "Fried Rice": "₹100",
+      "Pasta": "₹130",
+      "Sandwich": "₹80",
+      "Hot Dog": "₹90",
+      "Spring Rolls": "₹100",
+      "Tacos": "₹120",
+      "Sushi": "₹250",
+      "Samosa": "₹20",
+      "Jalebi": "₹30",
+      "Gulab Jamun": "₹40",
+      "Ice Cream": "₹60",
+      "Chocolate Cake": "₹120"
+    };
+
+    document.getElementById("food-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const input = document.getElementById("food-input").value.trim();
+      const result = document.getElementById("result");
+
+      if(foodPrices[input]) {
+        result.textContent = `${input} price is ${foodPrices[input]}`;
+      } else {
+        result.textContent = "❌ Food item not found!";
+      }
+    });
+  </script>
 </body>
 </html>
