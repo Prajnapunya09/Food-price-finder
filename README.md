@@ -6,6 +6,7 @@
 ## ✨ Key Features  
 - Easy-to-use food search bar  
 - Predefined menu with food items and their prices  
+- If a food item is not found, the app will display **"Food item not found"**  
 - Simple and responsive design  
 - Runs directly in the browser without setup  
 
@@ -17,18 +18,14 @@
 1. Clone or download the repository.  
 2. Open `index.html` in any modern browser.  
 3. Type the name of a food item in the search field.  
-4. Select the item from the dropdown to view its price.  
+4. Select the item from the dropdown to view its price (or a message if not found).  
 
 ## 📂 Files Included  
 food-price-finder/
 │── index.html → Main application file
 │── README.md → Project documentation
 
+## 🎥 Project Demo  
+[![Watch the video](https://img.icons8.com/ios-filled/50/000000/play-button-circled.png)](https://github.com/Prajnapunya09/Food-price-finder/blob/main/Food%20Price%20Finder(output%20vedio).mp4)  
 
-## 📌 Possible Improvements  
-- Show the selected food and price after clicking **Search**  
-- Categorize items (Indian, Chinese, Snacks, Desserts)  
-- Improve responsiveness for mobile devices  
-
-## 📜 License  
-This project is open-source and free to use for learning purposes.  
+Click the play button above ⬆ to watch the output demo. 
