@@ -6,6 +6,7 @@
 ## ✨ Key Features  
 - Easy-to-use food search bar  
 - Predefined menu with food items and their prices  
+- Click the **Search** button to view the selected food’s price  
 - If a food item is not found, the app will display **"Food item not found"**  
 - Simple and responsive design  
 - Runs directly in the browser without setup  
@@ -13,12 +14,13 @@
 ## 🛠️ Built With  
 - **HTML** – for structure  
 - **CSS** – for styling and layout  
+- **JavaScript** – for interactive search and price display  
 
 ## 🚀 How It Works  
 1. Clone or download the repository.  
 2. Open `index.html` in any modern browser.  
 3. Type the name of a food item in the search field.  
-4. Select the item from the dropdown to view its price (or a message if not found).  
+4. Click the **Search** button to view the price (or a message if the item is not found).  
 
 ## 📂 Files Included  
 food-price-finder/
