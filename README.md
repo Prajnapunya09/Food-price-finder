@@ -28,6 +28,6 @@ food-price-finder/
 │── README.md → Project documentation
 
 ## 🎥 Project Demo  
-[![Watch the video](https://img.icons8.com/ios-filled/50/000000/play-button-circled.png)](https://github.com/Prajnapunya09/Food-price-finder/blob/main/Food%20Price%20Finder(output%20vedio).mp4)  
+[![Watch the video](https://img.icons8.com/ios-filled/50/000000/play-button-circled.png)](https://github.com/Prajnapunya09/Food-price-finder/blob/main/output%20vedio(food%20price%20finder).mp4)  
 
 Click the play button above ⬆ to watch the output demo. 
